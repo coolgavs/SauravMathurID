@@ -1,3 +1,0 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-  <path d="M 50 50 C 75 25, 125 25, 150 50 C 175 75, 175 125, 150 150 C 125 175, 75 175, 50 150 C 25 125, 25 75, 50 50 Z" stroke="#007bff" stroke-width="10" fill="none"/>Saurav</svg>
