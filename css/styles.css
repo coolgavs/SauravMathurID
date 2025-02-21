@@ -2702,7 +2702,7 @@ td:last-child {
     line-height   : var(--vspace-1);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color         : var(--color-1);
+	color         : var(--color-1);
     transform     : translate(0.2em, 0);
     margin-top    : 0;
 }
@@ -4439,5 +4439,80 @@ td:last-child {
 @media screen and (max-width: 400px) {
     .ss-go-top {
         right: -2rem;
+    }
+}
+
+  
+/* Slider */
+
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+	border: 10px solid black;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+	border: 10px solid #fff;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;	
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
     }
 }
