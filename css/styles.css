@@ -155,7 +155,7 @@
     --color-gray-2 : #fbfcfb;
     --color-gray-1 : #fbfcfb;
     --color-white  : #ffffff;
-
+    --color-blue  : #0bdef5;
   /* text
    */
     --color-text       : var(--color-gray-19);
@@ -186,9 +186,9 @@
 
   /* preloader
    */
-    --color-preloader-bg: var(--color-gray-10);
+/*    --color-preloader-bg: var(--color-blue);*/
     --color-loader      : var(--color-3);
-    --color-loader-light: var(--color-gray-14);
+    --color-loader-light: var(--color-white);
 
   /* others
    */
@@ -2738,7 +2738,7 @@ td:last-child {
     font-size     : 10em;
     letter-spacing: -0.05em;
     line-height   : 1;
-    color         : var(--color-gray-11);
+    color         : var(--color-gray-16);
     margin-right  : var(--vspace-0_5);
     position      : absolute;
     top           : -0.25em;
@@ -2751,7 +2751,7 @@ td:last-child {
 }
 
 .section-header.light-on-dark::before {
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.537);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2806,7 +2806,7 @@ td:last-child {
 .swiper-container .swiper-pagination-bullet {
     width     : 8px;
     height    : 8px;
-    background: var(--color-gray-11);
+    background: var(--color-gray-9);
     opacity   : 1;
 }
 
@@ -3025,6 +3025,8 @@ td:last-child {
     min-height    : 100%;
     overflow      : hidden;
     position      : relative;
+    /*background-color: var(--color-purple);*/
+    background: url(../images/background/background.jpg);
 }
 
 
@@ -3034,7 +3036,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-header {
-    --header-height : 72px;
+    --header-height : 52px;
     --logo-width    : 10.2rem;
     --width-grid-max: calc(var(--width-sixteen-cols) - calc(var(--gutter) * 2));
     --box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.02),
@@ -3374,13 +3376,11 @@ td:last-child {
     --content-padding-bottom: 8rem;
     --content-min-height    : calc(var(--vspace-1) * 27);
     z-index                 : 2;
-    background-color        : var(--color-gray-10);
     width                   : 100%;
     height                  : max(var(--content-min-height), 100vh);
     overflow                : hidden;
     position                : relative;
 }
-
 /* --------------------------------------------------------------------
  * ## intro content
  * -------------------------------------------------------------------- */
@@ -3463,7 +3463,7 @@ td:last-child {
     height        : 100%;
     background    : linear-gradient(0deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
-    opacity       : 0.3;
+    opacity       : 0.1;
 }
 
 .s-intro__content-media img {
@@ -3531,7 +3531,8 @@ td:last-child {
 
 .s-intro__social svg path,
 .s-intro__social svg circle {
-    fill: rgb(255, 255, 255);
+    /*fill: rgb(255, 255, 255);*/
+    fill: white;
 }
 
 /* --------------------------------------------------------------------
@@ -3874,7 +3875,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: var(--vspace-7);
+    padding-top: var(--vspace-5);
     color      : var(--color-3);
 }
 
@@ -3882,7 +3883,7 @@ td:last-child {
  * ## about blocks
  * -------------------------------------------------------------------- */
 .s-about__blocks {
-    margin-top: var(--vspace-3);
+    margin-top: var(--vspace-2);
 }
 
 .s-about__blocks .s-about__block-title {
@@ -4048,7 +4049,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-testimonials {
     padding-top   : var(--vspace-4_5);
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-0_20);
 }
 
 .s-testimonials__header {
@@ -4105,7 +4106,7 @@ td:last-child {
     font-size  : calc(var(--text-size) * 0.75);
     font-weight: 400;
     line-height: var(--vspace-0_5);
-    color      : var(--color-text-light);
+    color      : var(--color-black);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4204,7 +4205,7 @@ td:last-child {
     --bottom-padding: var(--vspace-2_5);
     background-color: var(--color-3);
     margin-top      : auto;
-    padding-top     : var(--vspace-6);
+    padding-top     : var(--vspace-3);
     padding-bottom  : var(--bottom-padding);
     color           : var(--color-gray-15);
 }
