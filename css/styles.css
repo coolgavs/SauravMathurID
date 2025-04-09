@@ -3944,7 +3944,7 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
-.s-works {
+ .s-works {
     padding-top   : var(--vspace-6);
     padding-bottom: var(--vspace-1);
 }
@@ -4523,4 +4523,9 @@ td:last-child {
     .slider{
         height: 400px;
     }
+}
+.lbltext
+{
+    color:yellow;
+    font-style:italic;
 }

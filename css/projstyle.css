@@ -3,9 +3,23 @@
     margin: 0;
     padding: 0;
   }
-  
+
+/* ------------------------------------------------------------------- 
+ * ## fonts 
+ * ------------------------------------------------------------------- */
+ @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+ :root {
+     --font-1: "Public Sans", Sans-serif;
+     --font-2: "Castoro", Serif;
+ 
+   /* monospace
+    */
+     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+ }
+
   body {
-    font-family: Raleway;
+    font-family: Public Sans;
     background-color: #202125;
   }
   
@@ -13,7 +27,7 @@
       text-align: center;
       font-size: 2.0em;
       letter-spacing: 1px;
-      padding: 20px;
+      padding: 5px;
       color: white;
   }
   
@@ -22,17 +36,53 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(../images/background/projgallery.jpg);
+    background-image: url(../images/background/background.jpg);
   }
   
-  .gallery-image img {
+
+.thumbnail {
+  box-sizing: content-box;
+ /*  margin: 10px;
+ height: 250px;
+  width: 350px;*/
+  overflow: hidden;
+  display: flex;
+  color: white;
+  background-color: white;
+  border-style: solid;
+  border-width: thick;
+  position: relative;
+}
+
+
+.thumbnail video{
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+
+}
+.video-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  color: white;
+  overflow: hidden;
+  background-color: white;
+  border-style: solid;
+  border-width: thick;
+  display: inline-block;
+}
+  
+.gallery-image img {
     height: 250px;
     width: 350px;
     transform: scale(1.0);
     transition: transform 0.4s ease;
   }
   
-  .img-box {
+.img-box {
     box-sizing: content-box;
     margin: 10px;
     height: 250px;
@@ -88,3 +138,27 @@
   .opacity-low {
     opacity: 0.5;
   }
+
+  
+.blur {
+  transform: scale(0.9);
+  opacity: 0.6;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+a {
+	text-decoration: none;
+}
+a:visited, a:focus{
+	color: white;
+}
+
+.project-detail-desc
+{
+  display: flex;
+  align-content: center;
+}
