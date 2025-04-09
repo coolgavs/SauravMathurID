@@ -5,6 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
+    <meta name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Saurav Mathur - Interior Designer</title>
 
@@ -21,9 +22,10 @@
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+
 </head>
 
 
@@ -33,7 +35,7 @@
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader" class="dots-jump">
+        <div id="loader" class="dots-pulse">
             <div></div>
             <div></div>
             <div></div>
@@ -57,7 +59,7 @@
                         </a>
                     </div>
 
-                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                    <a class="s-header__menu-toggle" href="index.html"><span>Menu</span></a>
                 </div> <!-- end s-header__block -->
 
                 <nav class="s-header__nav">
@@ -101,8 +103,8 @@
         
             <ul class="s-intro__social social-list">
                 <li>
-                    <a href="#0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                    <a href="https://www.facebook.com/profile.php?id=61553923078518&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:;" role="banner"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
                         <span class="u-screen-reader-text">Facebook</span>
                     </a>
                 </li>
@@ -121,8 +123,21 @@
             </ul> <!-- end s-intro__social -->
 
             <div class="s-intro__content-media">
-                <img src="images/intro-bgfinal.png" srcset="images/intro-bgfinal.png 1x, images/intro-bgfinal.png 2x" alt="">
-            </div> <!-- s-intro__content-media -->                
+                <img src="images/intro-bgfinal.webp" 
+                srcset="images/intro-bgfinal.webp 1x, images/intro-bgfinal.webp 2x" 
+                alt="Profile Pic">
+            
+            <!-- <div class="s-intro__content-media">
+                    <img 
+                        src="images/intro-bgfinal.webp" 
+                        srcset="
+                            images/intro-bgfinal-480.webp 480w, 
+                            images/intro-bgfinal-768.webp 768w" 
+                        sizes="(max-width: 600px) 480px, 
+                               (max-width: 1024px) 768px" 
+                        alt="Profile Pic">
+                        -->
+                </div> <!-- s-intro__content-media -->                
 
             <div class="s-intro__btn-download">
                 <a class="btn btn--stroke" href="#works">Get My EBook</a>
@@ -172,21 +187,6 @@
                                 </li>
                             </ul>
                         </div> <!--end s-about__block -->
-
-                        <!--<div class="grid-list-items__item s-about__block">
-                            <h4 class="s-about__block-title">Awards</h4>
-
-                            <ul class="s-about__list">
-                                <li>
-                                    Site Of The Month
-                                    <span>Awwwards — 2023</span>
-                                </li>
-                                <li>
-                                    Site Of The Day
-                                    <span>Awwwards — 2023</span>
-                                </li>
-                            </ul>
-                        </div> -->
                         <!--end s-about__block -->
                         <div class="grid-list-items__item s-about__block">
                             <h4 class="s-about__block-title">Services</h4>
@@ -223,18 +223,17 @@
                     </div> <!-- end section-header -->
                 </div>
             </div>
-
             <div class="row folio-entries">
                 <div id="ebook" class="column entry">
-                    <a href="images/folio/gallery/g-ebookcover.png" class="entry__link glightbox" data-glightbox="title: Grab Your Copy now!!; description: .entry__desc-01">
+                    <a href="images/folio/gallery/g-ebookcover.webp" class="entry__link glightbox" data-glightbox="title: Couple's Guide to Vastu; description: .entry__desc-01">
                         <div class="entry__thumb">
-                          <img src="images/folio/ebook_new.jpg" srcset="images/folio/ebook_new.jpg 1x, images/folio/ebook_new@2x.jpg 2x" alt="">
+                          <img src="images/folio/ebook_new.webp" srcset="images/folio/ebook_new.webp 1x, images/folio/ebook_new@2x.webp 2x" alt="Ebook">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">
 								<br>Learn Vastu with my ebook @ ₹199!
 								<br>
-								<br><label style="color:yellow;font-style:italic">"Couple's Guide to Vastu"</label> has valuable insights, tips, and techniques to help you:
+								<br><label class="lbltext">"Couple's Guide to Vastu"</label> has valuable insights, tips, and techniques to help you:
 								<br>- Create a balanced living environment
 								<br>- Attract prosperity and good fortune
 								<br>- Improve relationships and communication
@@ -246,25 +245,16 @@
 
                     <div class="glightbox-desc entry__desc-01">
                         <p>
-							<br>Name - Saurav Mathur
-                            <br>Contact Me for Ebook Inquiry & Order
-							<!--<br><a href="javascript:window.open('images/PayLink.jpg', 'UPI QR Code', 'width=500,height=550')">UPI ID - 9840115565@ptyes </a>
-			
-							<br>* Send payment confirmation screenshot to <a href="mailto:smpg1401@gmail.com">smpg1401@gmail.com</a> from your valid email id.
-							<br>* Once payment is confirmed, copy of eBook will be mailed back!
-							<br>100% Satisfaction Guarantee!
-                        -->
-                            <br>Don't miss out on this opportunity to transform your life with the power of Vastu Shastra!
-
+                            Contact Me for Ebook Inquiry & Order
+                            <br>Don't miss out on this opportunity to transform your life with the power of Vastu Shastra!
 						</p>
-					 
                     </div>
                 </div> <!-- entry -->
 
                 <div class="column entry">
-                    <a href="images/folio/gallery/g-prj1.jpg" class="entry__link glightbox" data-glightbox="title: Parth Crown Project; description: .entry__desc-02">
+                    <a href="images/folio/gallery/g-prj1.webp" class="entry__link glightbox" data-glightbox="title: Parth Crown Project; description: .entry__desc-02">
                         <div class="entry__thumb">
-                            <img src="images/folio/prj1.jpg" srcset="images/folio/prj1.jpg 1x, images/folio/prj1@2x.jpg 2x" alt="">
+                            <img src="images/folio/prj1.webp" srcset="images/folio/prj1.webp 1x, images/folio/prj1@2x.webp 2x" alt="Parth Crown Project">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Parth Crown</h4>
@@ -273,23 +263,24 @@
                     </a>
 
                     <div class="glightbox-desc entry__desc-02">
-                        <p>
-						- Project Name: Parth Crown 501
+                       <p>
+						<!-- - Project Name: Parth Crown 501
 						<br>- Client: Mr. Vishal Borar
 						<br>Design and Installation
 						<br>- Scope: Interior design and installation of custom furniture and fixtures
 						<br>- Materials:
 						<br>- BWP (Boiling Water Proof) grade plywood for durability and moisture resistance
 						<br>- Laminate finish for aesthetic appeal and ease of maintenance
-						<br>- Budget - 12 to 15 lakhs...<a href="Project1_Gallery.html" >Project Gallery</a> 
+						<br>- Budget - 12 to 15 lakhs -->
+                        <a href="Project1_Gallery.html" >Project Gallery</a> 
                         </p>
                     </div>
                 </div> <!-- entry -->
 
                 <div class="column entry">
-                    <a href="images/folio/gallery/g-prj2.jpg" class="entry__link glightbox" data-glightbox="title: Arya Mansion Project; description: .entry__desc-03"> 
+                    <a href="images/folio/gallery/g-prj2.webp" class="entry__link glightbox" data-glightbox="title: Arya Mansion Project; description: .entry__desc-03"> 
                         <div class="entry__thumb">
-                            <img src="images/folio/prj2.jpg" srcset="images/folio/prj2.jpg 1x, images/folio/prj2@2x.jpg 2x" alt="">  
+                            <img src="images/folio/prj2.webp" srcset="images/folio/prj2.webp 1x, images/folio/prj2@2x.webp 2x" alt="Arya Mansion Project">  
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Arya Mansion</h4>
@@ -299,7 +290,7 @@
 
                     <div class="glightbox-desc entry__desc-03">
                         <p>
-						- Project Name: Arya Mansion
+						<!-- - Project Name: Arya Mansion
 						<br>- Client: Mr. Lalit Nag
 						<br>Design and Installation
 						<br>- Scope: Interior design and installation of custom furniture and fixtures
@@ -307,23 +298,39 @@
 						<br>- BWP (Boiling Water Proof) grade plywood for durability and moisture resistance
 						<br>- Laminate finish for aesthetic appeal and ease of maintenance
 						<br>- Budget - 12 to 15 lakhs...
-						<a href="Project2_Gallery.html">Project Gallery</a>
+						-->
+                        <a href="Project2_Gallery.html">Project Gallery</a>
                         </p>
                     </div>
                 </div> <!-- entry -->
-                
+               
                 <div class="column entry">
-                    <a href="images/folio/gallery/g-designs.jpg" class="entry__link glightbox" data-glightbox="title: Design Concepts; description: .entry__desc-04">
+                    <a href="images/folio/gallery/g-prj3.webp" class="entry__link glightbox" data-glightbox="title: Unicorn Valley Project; description: .entry__desc-04"> 
                         <div class="entry__thumb">
-                            <img src="images/folio/designconceptnew.jpg" srcset="images/folio/designconceptnew.jpg 1x, images/folio/designconceptnew@2x.jpg 2x" alt="">
+                            <img src="images/folio/prj3.webp" srcset="images/folio/prj3.webp 1x, images/folio/prj3@2x.webp 2x" alt="Unicorn Valley Project">  
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Unicorn Valley</h4>
+                            <div class="entry__cat">Mr Abhinav & Ms Sapna</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+						<a href="Project3_Gallery.html">Project Gallery</a>
+                    </div>
+                </div> <!-- entry -->
+               
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-designs.jpg" class="entry__link glightbox" data-glightbox="title: Design Concepts; description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="images/folio/designconceptnew.jpg" srcset="images/folio/designconceptnew.jpg 1x, images/folio/designconceptnew@2x.jpg 2x" alt="Design Concepts">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Design Concept</h4>
                             <div class="entry__cat">Inspiration to meet Customer Interior Needs</div>
                         </div>
                     </a>
-
-                    <div class="glightbox-desc entry__desc-04">
+                    <div class="glightbox-desc entry__desc-05">
                         <p>
                         Design concept Inspiration...
                         <a href="DesignConcepts.html">Project Gallery</a>.
@@ -435,69 +442,6 @@
 
         </section> <!-- end s-works --> 
 
-
-        <!-- # numbers
-        ================================================== 
-			<section id="numbers" class="s-numbers">-->
-
-            <!-- <div class="row counter-items">-->
-
-                <!--<div class="column counter-items__item">
-                    <div class="num">
-                        80
-                        <span>+</span>
-                    </div>
-                    <h5>Happy Customers</h5>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel harum magni quae voluptate error quo repellendus inventore 
-                    laborum ex veniam. 
-                    </p>
-                </div>--> <!-- end counter-items__item -->
-
-                <!-- <div class="column counter-items__item">
-                    <div class="num">
-                        120
-                        <span>+</span>
-                    </div>
-                    <h5>Projects Completed</h5>
-                    <p>
-                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. 
-                    Fusce vel dui. In ac felis 
-                    quis tortor malesuada pretium
-                    </p>
-                </div>--> <!-- end counter-items__item -->
-
-                <!-- <div class="column counter-items__item">
-                    <div class="num">
-                        23k
-                        <span>+</span>
-                    </div>
-                    <h5>Lines of Code</h5>
-                    <p>
-                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus
-                    </p>
-                </div>-->
-				<!-- end counter-items__item -->
-
-                <!--<div class="column counter-items__item">
-                    <div class="num">
-                        85
-                        <span>+</span>
-                    </div>
-                    <h5>Positive Feedback</h5>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel harum magni quae voluptate error 
-                    quo repellendus inventore laborum ex veniam.
-                    </p>
-                </div>--> <!-- end counter-items__item -->
-
-            <!--</div>-->  <!-- end counter-items -->
-
-         <!--</section> end s-numbers -->
-
-
         <!-- # footer 
         ================================================== -->
         <footer id="footer" class="s-footer target-section">
@@ -523,7 +467,7 @@
                         <div class="column xl-4 lg-5 md-6 tab-12">
                             <h5>Follow Me</h5>
                             <ul class="link-list">
-                                <li><a href="#0">Facebook</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61553923078518&mibextid=rS40aB7S9Ucbxw6v" target="_blank">Facebook</a></li>
                                 <li><a href="#0">X</a></li>
                                 <li><a href="https://www.instagram.com/idsaurav3112?igsh=MXR6MjUzeDhxMmtpMA==" target="_blank">Instagram</a></li>
                             </ul>
@@ -539,27 +483,12 @@
                 </div> <!-- end section-footer__site-links -->
 
             </div> <!-- end section-footer__content -->
-
-
-            <!--<div class="row s-footer__buttons">
-               
-             <div class="column xl-6 tab-12">
-                    <a href="mailto:#0" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
-                </div>
-          
-                <div class="column xl-6 tab-12">                    
-                    <a href="#0" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
-                </div>
-            
-            </div>--> 
-            <!-- end section-footer__buttons -->              
-            
             <div class="row s-footer__bottom">
                 
                 <div class="column xl-6 lg-12">
                     <ul class="s-footer__social social-list">
                         <li>
-                            <a href="#0">
+                            <a href="https://www.facebook.com/profile.php?id=61553923078518&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
                                 <span class="u-screen-reader-text">Facebook</span>
                             </a>
